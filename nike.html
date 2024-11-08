@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios</title>
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        .arriba {
+            background-color: #000000;
+            display: flex;
+            justify-content: center;
+            align-items: end;
+            height: 50px;
+
+            p {
+                color: white;
+                margin-top: 0px;
+            }
+
+            nav ul {
+                padding-right: 40px;
+
+                li {
+                    display: inline;
+                }
+            }
+        }
+
+        .medio {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            padding-left: 48px;
+            padding-right: 46px;
+            background-color: rgb(238, 238, 238);
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+
+        .abajo {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 48px;
+            padding-right: 46px;
+
+            div {
+                width: 250px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+
+        .fila {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .producto {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .img {
+            width: 300px;
+            height: 300px;
+        }
+
+        .new {
+            margin-bottom: 5px;
+            margin-top: 0%;
+            color: peru;
+            font-weight: bold;
+        }
+
+        .nombre {
+            margin-top: 6px;
+            margin-bottom: 0%;
+            font-weight: bold;
+        }
+
+        .descripcion {
+            margin-top: 6.4px;
+            margin-bottom: 3.2px;
+            font-size: 15px;
+            font-weight: normal;
+            color: gray;
+        }
+
+        .precio {
+            margin-top: 16px;
+            font-weight: bold;
+        }
+
+        footer{
+            background-color: #000000;
+
+            ul li a {
+                color: white;
+            }
+        }
+
+        .up {
+            display: flex;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="arriba">
+            <p><strong>6 cuotas sin interés en todo el sitio</strong></p>
+        </div>
+        <div class="medio">
+            <img src="assets/jordan.svg" alt="jordan" width="25">
+            <nav>
+                <ul>
+                    <li><a href="">Suscribite</a></li>
+                    <li><a href="">Buscar tienda</a></li>
+                    <li><a href="">Eventos</a></li>
+                    <li><a href="">Ayuda</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="abajo">
+            <img src="assets/nike.svg" alt="nike" width="60">
+            <nav>
+                <ul>
+                    <li><a href="">Destacados</a></li>
+                    <li><a href="">Hombre</a></li>
+                    <li><a href="">Niño/a</a></li>
+                    <li><a href="">Accesorio</a>s</li>
+                    <li><a href="">Oportunidade</a>s</li>
+                </ul>
+            </nav>
+            <div>
+                <form action="" method="post">
+                    <input type="search" name="busqueda" id="busqueda">
+                </form>
+                <img src="assets/shopping-bag.png" alt="compra" height="24">
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div class="fila">
+                <div class="producto">
+                    <div><img class="img"
+                            src="https://nikearprod.vtexassets.com/arquivos/ids/1066925-1000-1000?v=638622931950430000&width=1000&height=1000&aspect=true"
+                            alt="Pelota1"></div>
+                    <p class="new">Lo nuevo</p>
+                    <p class="nombre">Premier League Academy</p>
+                    <p class="descripcion">Pelota de Futbol Unisex</p>
+                    <p class="precio">60.999</p>
+                </div>
+                <div class="producto">
+                    <div><img class="img"
+                            src="https://nikearprod.vtexassets.com/arquivos/ids/912971-1000-1000?v=638538819855900000&width=1000&height=1000&aspect=true"
+                            alt="Mochila"></div>
+                    <p class="new">Lo nuevo</p>
+                    <p class="nombre">Jan</p>
+                    <p class="descripcion">Mochila Jordan para Niño/a</p>
+                    <p class="precio">52.999</p>
+                </div>
+                <div class="producto">
+                    <div><img class="img"
+                            src="https://nikearprod.vtexassets.com/arquivos/ids/1100236-1000-1000?v=638628242366870000&width=1000&height=1000&aspect=true"
+                            alt="Pelota2"></div>
+                    <p class="new">Lo nuevo</p>
+                    <p class="nombre">Premier League Flight</p>
+                    <p class="descripcion">Pelota de Futbol Unisex</p>
+                    <p class="precio">230.999</p>
+                </div>
+            </div>
+            <div class="fila">
+                <div class="producto">
+                    <div><img class="img"
+                            src="https://nikearprod.vtexassets.com/arquivos/ids/588116-1000-1000?v=638170831845970000&width=1000&height=1000&aspect=true"
+                            alt="Pelota3"></div>
+                    <p class="new">Lo nuevo</p>
+                    <p class="nombre">Nike Futsal Pro</p>
+                    <p class="descripcion">Pelota de Futsal Unisex</p>
+                    <p class="precio">84.999</p>
+                </div>
+                <div class="producto">
+                    <div><img class="img"
+                            src="https://nikearprod.vtexassets.com/arquivos/ids/732079-1000-1000?v=638308292291700000&width=1000&height=1000&aspect=true"
+                            alt="Gorra"></div>
+                    <p class="nombre">Nike DriFIT Rise</p>
+                    <p class="descripcion">Gorro de Moda Unisex</p>
+                    <p class="precio">51.499</p>
+                </div>
+                <div class="producto">
+                    <div><img class="img"
+                            src="https://nikearprod.vtexassets.com/arquivos/ids/912916-1000-1000?v=638538803847630000&width=1000&height=1000&aspect=true"
+                            alt="Vincha"></div>
+                    <p class="nombre">Nike Fury</p>
+                    <p class="descripcion">Vincha de Entrenamiento para Mujer</p>
+                    <p class="precio">39.999</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="up">
+            <div>
+                <ul>
+                    <li><a href=""><h5>BUSCAR TIENDA</h5></a></li>
+                    <li><a href=""> <h5>SUMATE A LA COMUNIDAD</h5></a></li> 
+                    <li><a href=""><h5>SEGUI TU PEDIDO</h5></a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="">AYUDA</a></li>
+                    <li><a href="">Envios y entregas</a></li>
+                    <li><a href="">Devoluciones</a></li>
+                    <li><a href="">Cambios</a></li>
+                    <li><a href="">Autogestionar mi devolucion</a></li>
+                    <li><a href="">Opciones de pago</a></li>
+                    <li><a href="">Contactate</a></li>
+                    <li><a href="">Defensa al consumidor</a></li>
+                    <li><a href="">Libro de quejas online</a></li>
+                    <li><a href="">Boton de arrepentimiento</a></li>
+                    <li><a href="">Ver todos</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="">ACERCA DE NIKE</a></li>
+                    <li><a href="">Proposito</a></li>
+                    <li><a href="">Noticias</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="">NOVEDADES NIKE</a></li>
+                    <li><a href="">Encontra tu calzado</a></li>
+                    <li><a href="">¿Como elegir tu tipo?</a></li>
+                    <li><a href="">Tips saludables</a></li>
+                    <li><a href="">Promociones</a></li>
+                    <li><a href="">CyberMonday</a></li>
+                </ul>
+            </div>
+            <div>
+
+            </div>
+            <div>
+
+            </div>
+        </div>
+        <div class="copy">
+
+        </div>
+    </footer>
+</body>
+
+</html>
