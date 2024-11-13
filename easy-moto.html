@@ -1,10 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easy-Moto</title>
     <style>
+        main {
+            border: 1px solid gray;
+            border-radius: 10px;
+            width: 300px;
+        }
+
+        .prod {
+            width: 300px;
+            position: relative;
+
+            /* Al padre que contendra el elemento que quiero posicionar*/
+            button {
+                background-image: none;
+            }
+        }
+
+        .prodimg {
+            width: 100%;
+        }
+
+        .oferta {
+            background-color: rgb(77, 160, 255);
+            position: absolute;
+            /* top-right-bottom-left */
+            top: 15px;
+            left: 20px;
+            width: 110px;
+            height: 65px;
+            border-radius: 8px;
+
+            p {
+                margin: 0;
+                border-left: 20px;
+                span {
+                    
+                }
+            }
+
+            .cuotas {
+                display: flex;
+
+                p {
+                    margin: 0;
+
+                    span {
+                        font-size: 30px;
+                    }
+                }
+
+            }
+        }
+
+
+
+
         .box {
             display: flex;
             flex-wrap: wrap;
@@ -24,7 +80,31 @@
         }
     </style>
 </head>
+
 <body>
+    <main>
+        <div class="prod">
+            <img class="prodimg" src="assets/prod.webp" alt="Producto">
+        </div>
+        <p>Vista rapida</p>
+        <div class="oferta">
+            <p><span>HASTA</span></p>
+            <div class="cuotas">
+                <p><span>12</span> Sin interes</p>
+            </div>
+        </div>
+        <div class="descripcion">
+            <h5>Sherwin Williams</h5>
+            <p>Látex Exterior Interior Mate <br> Weekend 20 L Sherwin Williams</p>
+            <div class="precio">
+                <div class="descuento">
+                    <p><span>-20%</span> $99.585</p>
+                </div>
+                <p>$79.668</p>
+            </div>
+        </div>
+
+    </main>
     <footer>
         <div class="box">
             <div class="content">
@@ -42,4 +122,5 @@
         </div>
     </footer>
 </body>
+
 </html>
